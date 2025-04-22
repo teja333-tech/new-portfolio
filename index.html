@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tejaswini Prasanth - Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <header class="hero-section">
+    <div class="content">
+      <img src="tejaswini.jpeg" alt="Tejaswini Prasanth" class="profile-img"/>
+      <h1>Hi, I'm <span class="highlight">Tejaswini Prasanth</span></h1>
+      <h2><span id="typing"></span></h2>
+      <p class="intro">
+        Hi, I am Tejaswini Prasanth, a first-year Computer Science Engineering student at Vimal Jyothi Engineering College. As an aspiring computer science student, I have a passion for technology, problem-solving, and continuous learning. I am eager to develop skills in programming, algorithms, software development, and contribute to the ever-evolving tech industry.
+      </p>
+    </div>
+  </header>
+
+  <section class="accordion-section">
+    <button class="accordion">Education</button>
+    <div class="panel">
+      <p><strong>Primary Education:</strong> Mary Matha English School, Pilathara</p>
+      <p><strong>Higher Secondary:</strong> CPNGHSS Mathamangalam</p>
+      <p><strong>Currently:</strong> Vimal Jyothi Engineering College – B.Tech in Computer Science Engineering (2024–2028)</p>
+    </div>
+
+    <button class="accordion">Skills</button>
+    <div class="panel">
+      <ul>
+        <li>C Programming</li>
+        <li>Communication</li>
+        <li>Time Management</li>
+        <li>Problem Solving</li>
+        <li>HTML & CSS</li>
+      </ul>
+    </div>
+
+    <button class="accordion">Contact</button>
+    <div class="panel">
+      <p>Email: <a href="mailto:tejaswinitjec@gmail.com">tejaswinitjec@gmail.com</a></p>
+      <div class="social-icons">
+        <!-- Add your real profile links later -->
+        <i class="fab fa-linkedin"></i>
+        <i class="fab fa-github"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Tejaswini Prasanth. All rights reserved.</p>
+  </footer>
+
+  <script>
+    var typed = new Typed("#typing", {
+      strings: ["Aspiring CS Student", "Passionate Learner"],
+      typeSpeed: 50,
+      backSpeed: 25,
+      loop: true
+    });
+
+    var acc = document.getElementsByClassName("accordion");
+    for (var i = 0; i < acc.length; i++) {
+      acc[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var panel = this.nextElementSibling;
+        if (panel.style.maxHeight) {
+          panel.style.maxHeight = null;
+        } else {
+          panel.style.maxHeight = panel.scrollHeight + "px";
+        }
+      });
+    }
+  </script>
+</body>
+</html>

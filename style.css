@@ -1,0 +1,121 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+.hero-section {
+  background: url('https://www.transparenttextures.com/patterns/black-linen.png');
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.profile-img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  border: 3px solid #fff;
+}
+
+.highlight {
+  color: #00ffff;
+}
+
+.intro {
+  margin-top: 15px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.accordion-section {
+  padding: 40px 20px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.accordion {
+  background-color: #111;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  font-size: 1.1em;
+  transition: 0.3s;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.accordion:hover,
+.accordion.active {
+  background-color: #222;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #1a1a1a;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-out;
+  border-radius: 0 0 5px 5px;
+}
+
+.panel p,
+.panel ul {
+  padding: 15px 0;
+}
+
+.panel ul {
+  list-style-type: none;
+}
+
+.panel li {
+  padding: 5px 0;
+}
+
+.social-icons {
+  padding: 10px 0;
+  font-size: 1.5rem;
+}
+
+.social-icons i {
+  margin: 0 10px;
+  color: #00ffff;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.social-icons i:hover {
+  color: #ff4081;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #111;
+  font-size: 0.9em;
+  color: #aaa;
+}
